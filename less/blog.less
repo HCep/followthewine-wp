@@ -1,0 +1,358 @@
+@import 'variables.less';
+@import 'mixins.less';
+#product_section{
+    justify-content:center;
+    @media @small{
+        justify-content:space-between;
+    }
+}
+.single-packet-cnt{
+    position:relative;
+    width:auto;
+    display:flex;
+    flex-direction: column;
+    margin:0 auto;
+    @media @small{
+        width:50%;
+    }
+    @media (min-width:1400px){
+        width:25%;
+    }
+ 
+}
+.collapseomatic_content {
+    background-color: rgba(0,0,0,.3);
+    padding:20px;
+}
+.packet-cnt{
+    position:relative;
+    display:flex;
+ 
+    height:450px;
+    background-color: rgba(0,0,0,.3);
+    width:360px;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-around;
+    padding:30px;
+    margin:10px auto;
+    
+    @media @x-small{
+        height:550px;
+    right:auto;
+    clip-path: polygon(50% 16%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+
+    
+}
+.green-sub-title, .green-price-sale, .green-price{
+     color:#00a658;
+     font-weight:bold;
+     white-space:nowrap;
+}
+.green-color-price{
+    color:#5bc00c;
+    display:block;
+    font-size:30px;
+    margin:10px auto;
+    font-weight:bold;
+    width:100%;
+    @media @x-small{
+        font-size:40px;
+    }
+     @media @medium{
+        font-size:25px;
+     }
+}
+.sale-price-product {
+    .green-price-sale{
+        font-size:16px;
+        text-decoration: line-through;
+        @media (max-width:768px){
+            font-size:25px;
+        }
+} }
+.sale-product{
+    .green-price-sale{
+        font-size:30px;
+        @media (max-width:768px){
+            font-size:60px;
+        }
+    }
+}
+.green-price{
+    font-size:30px;
+    
+}
+.title-product{
+    color:#fff;
+    font-size:45px;
+    font-weight:bold;
+}
+.green-color{
+    color:#00a658;
+}
+.collapseomatic, .button-choose, .wp-block-button__link {
+    font-size:20px;
+    margin-top:10px;
+    display:block;
+    border:4px solid #00a658;
+   padding:10px 20px;
+  
+   background-color: rgba(0,0,0,.3);
+    color:white;
+    font-weight:bold;
+    text-align:center;
+    transition:.2s ease-in-out;
+    &:hover{
+        text-decoration: none;
+        border:4px solid #fff;
+      
+        
+        
+    }
+    &:active, &:focus{
+        background-color:#fff;
+        color:#00a658;
+    }
+    
+}
+.wp-block-button__link{
+    font-size:12px!important;
+    @media @x-small{
+        font-size:15px!important;
+    }
+    @media @small{
+        font-size:25px!important;
+    }
+    a{
+        &:active, &:focus{
+        background-color:#fff;
+        color:#00a658;
+    }
+    }
+  
+    @media @small{
+        margin-right:25px;
+    }
+}
+.packet-btn{
+    position:absolute;
+    top:91%;
+    left:0;
+    width:100%;
+    padding:10px;
+    margin:0px;
+    background-color:#252424;
+    text-align:left;
+    z-index:999;
+}
+strong, .big{
+    color:#00a658;
+}
+.title-container{
+    position:relative;
+    padding-top:0px;
+    .price-product{
+        text-align: center;
+        position:relative;
+        top:-10px;
+        .green-price{
+         
+            @media (max-width:768px){
+                font-size:60px;
+            }
+        }
+        @media (max-width:768px){
+            position:relative;
+            top:-60px;
+        }
+    }
+    .sale-price-product{
+        position: absolute;
+        top: -20%;
+        left: 10%;
+        text-align: center;
+        @media (max-width:768px){
+           
+            top: -36%;
+            
+           
+        }
+    }
+    .sale-product{
+        position: relative;
+        top: -15px;
+        text-align: center;
+        @media (max-width:768px){
+            
+            top: -55px;
+            
+        }
+    }
+    .title-product{
+        @media (max-width:768px){
+            position: relative;
+            top: -35px;
+        }
+    }
+}
+.green-sub-title{
+    position: absolute;
+    top: 86%;
+    font-size: 30px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    right: -48px;
+    
+}
+.big{
+    font-size:60px;
+    @media @medium{
+        font-size:80px;
+    }
+    
+}
+.title-product{
+    position:relative;
+}
+.woocommerce-notices-wrapper{
+    display:none;
+}
+th,td,tr, .page .content-area .woocommerce table tbody tr:first-child{
+    color:#fff;
+}
+.h1-head{
+    font-size:20px;
+    white-space:nowrap;
+    @media @small{
+        font-size:30px;
+    }
+    @media @medium{
+        font-size:40px;
+    }
+}
+.h1-big{
+    font-size:30px;
+    white-space:nowrap;
+    @media @small{
+        font-size:40px;
+    }
+    @media @medium{
+        font-size:50px;
+    }
+}
+.h2-head, .h2-big{
+    white-space:nowrap;
+    font-size:40px;
+    @media @small{
+        font-size:60px;
+    }
+    @media @medium{
+        font-size:80px;
+    }
+}
+.current-date-type{
+    font-size:20px;
+    @media @small{
+        font-size:40px;
+    }
+}
+.user-name-papaya{
+    font-size:25px;
+    @media @small{
+        font-size:45px;
+    }
+}
+.h2-packet-big{
+    font-size:35px;
+    @media @small{
+        font-size:55px;
+    }
+}
+.h2-packet{
+font-size:25px;
+@media @small{
+    font-size:50px;
+}
+}
+th, td, tr, .page .content-area .woocommerce table tbody tr:first-child{
+    background-color:transparent;
+    &:hover{
+        background-color:transparent;
+    }
+}
+.custom-btn-rabat{
+  
+    white-space:nowrap;
+    a{
+        font-size:13px;
+        @media @small{
+            font-size:20px;
+        }
+    }
+   
+}
+.mobile-hiddden{
+    display:none;
+    @media @small{
+        display:block;
+    }
+}
+.content-packet{
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    margin: 0 auto;
+    bottom: 15%;
+    @media (max-width:768px){
+        bottom: 18%;
+    }
+    @media @small{
+        width:45%;
+        left:27.5%;
+    }
+    @media (min-width:1400px){
+        width: 90%;
+        left: 5%;
+    }
+}
+.wpsm_row{
+    .wpsm_col-md-4{
+        position:relative;
+        &:nth-child(1),  &:nth-child(3){
+            .wpsm_counterbox{
+                position:relative;
+                .wpsm_number{
+                    position:relative;
+                    &:after{
+                        content:'+';
+                        position:absolute;
+                        top:0;
+                        right:auto;
+                        color:white;
+                    }
+                   
+
+                }
+            }
+        }
+        &:nth-child(2){
+            .wpsm_counterbox{
+                position:relative;
+                .wpsm_number{
+                    position:relative;
+                    &:after{
+                        content:'zł+';
+                        position:absolute;
+                        top:0;
+                        right:auto;
+                        color:white;
+                    }
+                   
+
+                }
+            }
+        }
+    }
+}

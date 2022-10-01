@@ -1,0 +1,48 @@
+@import 'variables.less';
+@import 'mixins.less';
+
+
+.links-footer{
+    width:100%;
+    flex-wrap:wrap;
+    @media @small{
+        width:50%;
+    }
+    .widget{
+        display:flex;
+        align-items:center;
+        width:100%;
+        .wp-block-columns{
+            margin-bottom:0px;
+            align-items:center!important;
+            width:100%;
+            justify-content:space-between;
+            .wp-block-column{
+                display: flex;
+                align-items: center;
+                height: 100%;
+                justify-content: space-around;
+                p{
+                    margin-bottom:0px;
+                    font-size:25px;
+                    a{
+                        white-space:nowrap;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+.logo-footer-cnt{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    @media @small{
+        width:40%;
+        margin:auto;
+        display: block;
+
+    }
+}
